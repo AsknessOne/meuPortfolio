@@ -1,0 +1,55 @@
+{% extends 'index.html' %}
+{% block body %}
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('skills') }}">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('projetos') }}">Projetos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/cinthia-ferreira-8317812ab"><button type="button" class="btn btn-primary btn-sm me-2"><i class="fa-brands fa-linkedin-in fa-lg"></i></button></a>
+          <a href="https://github.com/AsknessOne" target="_blank"><button type="button" class="btn btn-dark btn-sm me-2"><i class="fa-brands fa-github"></i></button></a>
+      </div>
+      </div>
+    </nav>
+
+    
+    <section class="aboutme-section">
+        <div class="content-wrapper">
+          <div class="text-content">
+            <h3>Saiba mais sobre mim.</h3>
+            <h5>Acadêmica em Engenharia de Software | Desenvolvedora BackEnd Especialista em Python </h5>
+            <br/>
+            <p>
+            Meu nome é Cinthia Ferreira, tenho 22 anos e sou natural de Minas Gerais. <br/><br/>
+            Atualmente estou cursando o segundo ano da graduação em Engenharia de Software na Universidade do Norte do Paraná - UNOPAR(EAD). <br/>
+            Tenho me especializado em desenvolvimento backend utilizando python na escola de tecnologia Hashtag Treinamentos. <br/>
+            Faço trabalho voluntário no CREAJR-MG, núcleo São João Del Rei, como assessora de documentos, onde realizo atividades como oficialização dos documentos do núcleo, 
+            registro de todos os tipos de eventos organizados e emissão de certificados e atas.<br/><br/>
+
+            Além da programação, tenho interesse por leitura, escrita critiva e música. <br/><br/>
+
+            Estou determinada a aprimorar continuamente minhas habilidades e contribuir para o avanço da tecnologia. <br/>
+            Acredito que o aprendizado é um processo constante, e estou sempre em busca de novos desafios e oportunidades de crescimento.
+            </p>
+          </div>
+          <div class="image-content imagem">
+            <img src="{{ url_for('static', filename='foto.jpg') }}"alt="Foto Pessoal">
+          </div>
+        </div>
+      </section>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+
+{% extends 'index.html' %}
+{% block body %}
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link"  href="{{ url_for('index') }}">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('sobre') }}">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('skills') }}">Habilidades</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/cinthia-ferreira-8317812ab"><button type="button" class="btn btn-primary btn-sm me-2"><i class="fa-brands fa-linkedin-in fa-lg"></i></button></a>
+          <a href="https://github.com/AsknessOne" target="_blank"><button type="button" class="btn btn-dark btn-sm me-2"><i class="fa-brands fa-github"></i></button></a>
+      </div>
+      </div>
+    </nav>
+
+    <section id="projetos">
+        <h2>Projetos de Desenvolvimento | Soluções Criadas</h2>
+        <hr/>
+        <div class="grid-container">
+            <div class="projeto mt-5">
+                <img src="{{ url_for('static', filename='projeto1.png') }} " class="img-fluid" alt="Projeto 1">
+                <h3>Gerador de Senhas Seguras</h3>
+                <p>Ferramenta para criar senhas.</p>
+                <p>Tecnologias utilizadas: Python | Tkinter </p>
+                <a href="https://github.com/AsknessOne/geradorDeSenhas" target="_blank"><button type="button" class="btn btn-dark">Repositório <i class="fa-brands fa-github"></i></button></a>
+            </div>
+
+            <div class="projeto mt-5">
+                <img src="{{ url_for('static', filename='projeto2.png') }}" class="img-fluid" alt="Projeto 2">
+                <h3>'ZenList' - Gerenciador de Tarefas</h3>
+                <p>Projeto Web: Sistema simples e moderno para gerenciamento de tarefas.</p>
+                <p>Tecnologias utilizadas: HTML | CSS | Bootstrap | Python | Flask | Jinja </p>
+                <a href="https://github.com/AsknessOne/projetoTarefas" target="_blank"><button type="button" class="btn btn-dark">Repositório <i class="fa-brands fa-github"></i></button></a>
+
+        </div>
+    </section>
+
+{% endblock %}
+    
+    

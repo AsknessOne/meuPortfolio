@@ -1,0 +1,21 @@
+# Ignorar diretórios do ambiente virtual
+venv/
+env/
+
+# Ignorar arquivos de compilação do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar dependências instaladas pelo pip
+*.egg-info/
+pip-log.txt
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar logs e arquivos de cache
+*.log
+*.sqlite3

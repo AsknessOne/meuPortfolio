@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+{% block body %}
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('sobre') }}">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('projetos') }}">Projetos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/cinthia-ferreira-8317812ab" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-primary btn-sm me-2">
+                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                    </button>
+                </a>
+                <a href="https://github.com/AsknessOne" target="_blank"><button type="button" class="btn btn-dark btn-sm me-2"><i class="fa-brands fa-github"></i></button></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="skill-set">
+        <h2>SKILL-SET</h2>
+        <ul>
+            <li><strong>Desenvolvimento Backend:</strong> Experiência com lógica de programação, manipulação de estruturas de dados e POO.</li>
+            <li><strong>Aplicações Web:</strong> Configuração e criação de aplicações responsivas, dinâmicas e integração front/back.</li>
+            <li><strong>Versionamento e Colaboração:</strong> Controle de versionamento com Git e GitHub.</li>
+            <li><strong>Projetos:</strong> Desenvolvimento de sistemas de tarefas com validação de dados, boas práticas de programação e modelagem de sistemas (UML).</li>
+        </ul>
+        <div class="icons">
+            <div>
+                <img src="{{ url_for('static', filename='html.png') }}" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='css.png') }}" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='bootstrap.png') }}" alt="Bootstrap">
+                <span>Bootstrap</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='py.png') }}" alt="Python">
+                <span>Python</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='flask.png') }}" alt="Flask">
+                <span>Flask</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='git.png') }}"alt="Git">
+                <span>Git</span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
